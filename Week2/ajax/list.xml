@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirits>
+    <spirit>
+        <spiritName>Cabo Wabo</spiritName>
+        <quantity>1</quantity>
+        <bottleMIL>Fifth (750 ML)</bottleMIL>
+        <shelve>Top Shelve</shelve>
+        <family>Tequila</family>
+        <date>2012-07-17</date>
+    </spirit>
+    <spirit>
+        <spiritName>Jack Daniels</spiritName>
+        <quantity>1</quantity>
+        <bottleMIL>Liter (1000 ML)</bottleMIL>
+        <shelve>Middle Shelve</shelve>
+        <family>Whiskey</family>
+        <date>2012-02-14</date>
+    </spirit>
+    <spirit>
+        <spiritName>Malibu Coconut Rum</spiritName>
+        <quantity>1</quantity>
+        <bottleMIL>Pint (375 ML)</bottleMIL>
+        <shelve>Bottom Shelve</shelve>
+        <family>Rum</family>
+        <date>2012-05-02</date>
+    </spirit>
+    <spirit>
+        <spiritName>99 Bananas</spiritName>
+        <quantity>1</quantity>
+        <bottleMIL>Fifth (750 ML)</bottleMIL>
+        <shelve>Bottom Shelve</shelve>
+        <family>Brandy</family>
+        <date>2012-01-17</date>
+    </spirit>
+    <spirit>
+        <spiritName>Narutotai</spiritName>
+        <quantity>2</quantity>
+        <bottleMIL>Fifth (750 ML)</bottleMIL>
+        <shelve>Middle Shelve</shelve>
+        <family>Sake</family>
+        <date>2008-09-12</date>
+    </spirit>
+    <spirit>
+        <spiritName>Dolin</spiritName>
+        <quantity>1</quantity>
+        <bottleMIL>Fifth (750 ML)</bottleMIL>
+        <shelve>Top Shelve</shelve>
+        <family>Vermouth</family>
+        <date>2011-12-30</date>
+    </spirit>
+    <spirit>
+        <spiritName>Seagrems</spiritName>
+        <quantity>1</quantity>
+        <bottleMIL>Pint (375 ML)</bottleMIL>
+        <shelve>Bottom Shelve</shelve>
+        <family>Gin</family>
+        <date>2012-02-14</date>
+    </spirit>
+    <spirit>
+        <spiritName>Evan Williams Cherry</spiritName>
+        <quantity>1</quantity>
+        <bottleMIL>Fifth (750 ML)</bottleMIL>
+        <shelve>Middle Shelve</shelve>
+        <family>Whiskey</family>
+        <date>2012-06-10</date>
+    </spirit>
+    <spirit>
+        <spiritName>Patron Silver</spiritName>
+        <quantity>1</quantity>
+        <bottleMIL>Fifth (750 ML)</bottleMIL>
+        <shelve>Top Shelve</shelve>
+        <family>Tequila</family>
+        <date>2012-11-22</date>
+    </spirit>
+    <spirit>
+        <spiritName>Grey Goose</spiritName>
+        <quantity>1</quantity>
+        <bottleMIL>Magnum (1500 ML)</bottleMIL>
+        <shelve>Top Shelve</shelve>
+        <family>Vodka</family>
+        <date>2012-03-01</date>
+    </spirit>
+    <spirit>
+        <spiritName>Jameson 18 Years</spiritName>
+        <quantity>1</quantity>
+        <bottleMIL>Fifth (750 ML)</bottleMIL>
+        <shelve>Top Shelve</shelve>
+        <family>Whiskey</family>
+        <date>2012-03-17</date>
+    </spirit>
+    <spirit>
+        <spiritName>Aristocrat</spiritName>
+        <quantity>1</quantity>
+        <bottleMIL>Double Magnum (3000 ML)</bottleMIL>
+        <shelve>Bottom Shelve</shelve>
+        <family>Vodka</family>
+        <date>2009-10-25</date>
+    </spirit>
+    <spirit>
+        <spiritName>Makers Mark</spiritName>
+        <quantity>1</quantity>
+        <bottleMIL>Fifth (750 ML)</bottleMIL>
+        <shelve>Top Shelve</shelve>
+        <family>Whiskey</family>
+        <date>2010-06-29</date>
+    </spirit>
+    <spirit>
+        <spiritName>Beefeater</spiritName>
+        <quantity>1</quantity>
+        <bottleMIL>Fifth (750 ML)</bottleMIL>
+        <shelve>Top Shelve</shelve>
+        <family>Gin</family>
+        <date>2012-04-09</date>
+    </spirit>
+    <spirit>
+        <spiritName>Crystal Skull</spiritName>
+        <quantity>1</quantity>
+        <bottleMIL>Pint (375 ML)</bottleMIL>
+        <shelve>Middle Shelve</shelve>
+        <family>Vodka</family>
+        <date>2012-07-17</date>
+    </spirit>
+    <spirit>
+        <spiritName>Baileys</spiritName>
+        <quantity>1</quantity>
+        <bottleMIL>Fifth (750 ML)</bottleMIL>
+        <shelve>Middle Shelve</shelve>
+        <family>Whiskey</family>
+        <date>2012-06-06</date>
+    </spirit>
+    <spirit>
+        <spiritName>Aftershock</spiritName>
+        <quantity>1</quantity>
+        <bottleMIL>Fifth (750 ML)</bottleMIL>
+        <shelve>Bottom Shelve</shelve>
+        <family>Brandy</family>
+        <date>2006-01-03</date>
+    </spirit>
+    <spirit>
+        <spiritName>Balvenie 12 Year</spiritName>
+        <quantity>1</quantity>
+        <bottleMIL>Fifth (750 ML)</bottleMIL>
+        <shelve>Bottom Shelve</shelve>
+        <family>Whiskey</family>
+        <date>2009-09-25</date>
+    </spirit>
+    <spirit>
+        <spiritName>Hennessey</spiritName>
+        <quantity>1</quantity>
+        <bottleMIL>Fifth (750 ML)</bottleMIL>
+        <shelve>Top Shelve</shelve>
+        <family>Cognac</family>
+        <date>2012-05-12</date>
+    </spirit>
+    <spirit>
+        <spiritName>Bel Ange</spiritName>
+        <quantity>1</quantity>
+        <bottleMIL>Pint (375 ML)</bottleMIL>
+        <shelve>Middle Shelve</shelve>
+        <family>Cognac</family>
+        <date>2012-07-12</date>
+    </spirit>
+    <spirit>
+        <spiritName>Bukito</spiritName>
+        <quantity>1</quantity>
+        <bottleMIL>Fifth (750 ML)</bottleMIL>
+        <shelve>Middle Shelve</shelve>
+        <family>Sake</family>
+        <date>2012-04-19</date>
+    </spirit>
+    <spirit>
+        <spiritName>Aristocrat</spiritName>
+        <quantity>1</quantity>
+        <bottleMIL>Magnum (1500 ML)</bottleMIL>
+        <shelve>Bottom Shelve</shelve>
+        <family>Tequila</family>
+        <date>2012-02-26</date>
+    </spirit>
+    <spirit>
+        <spiritName>Smirnoff Whipped</spiritName>
+        <quantity>1</quantity>
+        <bottleMIL>Fifth (750 ML)</bottleMIL>
+        <shelve>Middle Shelve</shelve>
+        <family>Vodka</family>
+        <date>2012-07-14</date>
+    </spirit>
+    <spirit>
+        <spiritName>Gentleman Jack</spiritName>
+        <quantity>1</quantity>
+        <bottleMIL>Fifth (750 ML)</bottleMIL>
+        <shelve>Top Shelve</shelve>
+        <family>Whiskey</family>
+        <date>2011-11-18</date>
+    </spirit>
+    <spirit>
+        <spiritName>Johnnie Walker Red</spiritName>
+        <quantity>1</quantity>
+        <bottleMIL>Fifth (750 ML)</bottleMIL>
+        <shelve>Middle Shelve</shelve>
+        <family>Whiskey</family>
+        <date>2010-01-02</date>
+    </spirit>
+</spirits>
