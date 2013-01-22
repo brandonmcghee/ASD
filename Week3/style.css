@@ -1,0 +1,150 @@
+body {
+    color:#FFFFFF;
+    background-color:#000000;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif !important;
+
+}
+
+nav {
+    margin-bottom:10px;
+    text-align:center;
+}
+
+
+a.delete {
+    background-color:#ba7a7a;
+    padding:2px !important;
+    padding:5px;
+    margin:5px;
+}
+
+header.index {
+    background-color:#c3a35e;
+    font-size:18px;
+    padding:3px;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+
+}
+
+select {
+    float:left;
+    font-size:18px;
+    width:270px;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+legend {
+    font-family:Arial,Helmet,Freesans,sans-serif;
+    font-size:14px;
+    text-decoration:underline;
+    color:white;
+}
+
+label {
+    font-size:20px;
+    text-decoration:underline;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+label.shelve {
+    font-size:15px;
+    text-decoration:none;
+}
+
+ul {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    width:auto;
+    list-style-type:none;
+    margin:0px;
+    padding:2px;
+    
+}
+
+ul.errors {
+    color:red;
+    font-weight:bold;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+li {
+    margin:5px;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    
+}
+
+fieldset {
+    border:none;
+}
+
+img.splash {
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+
+p.title {
+    text-align:center;
+    color:#FFFFFF;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    margin:0px;
+}
+
+div.family {
+    background-color:transparent;
+    border:none !important;
+}
+
+img.mini {
+    margin-left:auto !important;
+    margin-right:auto !important;
+    display:block !important;
+}
+
+p.hint {
+    font-size:12px !important;
+    padding:3px;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif !important;
+}
+
+label.error {
+    display:block;
+    margin: 10px 0;
+    color: #CC0000;
+}
+
+#errorlink {
+    display:none;
+}
+
+.ui-page {
+      background-image:url("images/bg.png") !important;
+}
+
+div.nav {
+    float:right !important;
+    margin-right:10px !important;
+}
+
+div.splash {
+    width:100%;
+    margin:0px !important;
+    padding:0px !important;
+}
+
+div.navlist {
+    padding:0px !important;
+    margin:0px !important;
+}
+
+img.banner {
+    width:100% !important;
+    padding:0px !important;
+    margin:0px !important;
+}
+
+p.xmlTitle {
+    color:FF00FF !important;
+}

@@ -46,7 +46,7 @@ var shelveValue;
 //News generator for news page
 var newsResults = function() {
         var array = [];
-    var arrayfinal = [];
+	var arrayfinal = [];
         var list = $('#newsList');
         
         for (var i = 0, len = localStorage.length; i < len; i++) {
@@ -123,7 +123,8 @@ function makeItemLinks(key, linksLi, i) {
     editLink.attr("data-icon", "gear");
     editLink.attr("id", "editLink" + i);
     editLink.attr("href", "#add");
-    editLink.key = key;
+    editLink.attr("key", key);
+    //editLink.key = key;
     var editText = "Edit";
     editLink.on("click", editSpirit);
     editLink.html(editText);
@@ -136,7 +137,7 @@ function makeItemLinks(key, linksLi, i) {
     deleteLink.attr("data-icon", "delete");
     deleteLink.attr("id", "deleteLink" + i);
     deleteLink.attr("href", "#");
-    deleteLink.key = key;
+    deleteLink.attr("key", key);
     var deleteText = "Delete Spirit";
     deleteLink.on("click", deleteSpirit);
     deleteLink.html(deleteText);
@@ -147,9 +148,7 @@ function makeItemLinks(key, linksLi, i) {
     
 //Function called to edit user's spirit
 function editSpirit() {
-    alert("Edit Spirit Function This is " + this);
-     var value = localStorage.getItem(this.key);
-    alert("value is " + value);
+    var value = localStorage.getItem($(this).attr("key"));
     var spirit = JSON.parse(value);
     
     $('#spiritname').val(spirit.spiritName[1]);
@@ -207,7 +206,7 @@ function editSpirit() {
         editSubmit.on('click', function() {
                                 myForm.validate();
                 });
-        editSubmit.key = this.key;
+        editSubmit.key = $(this).attr("key");
         
 
     }
@@ -215,11 +214,9 @@ function editSpirit() {
 
 //Deletes selected spirit
 var deleteSpirit = function (){
-    alert("Delete Spirit Function This is " + this);
-    alert("Key is " + this.key);
         var ask = confirm("Are you sure you want to delete this spirit from your inventory?");
         if (ask) {
-            localStorage.removeItem($('a', this.key));
+            localStorage.removeItem($(this).attr("key"));
             alert("Spirit has been removed");
         location.reload();
         $('#inventory').listview("refresh");
@@ -262,7 +259,6 @@ var storeData = function(key){
 
 //Shows the buttons in jQuery style
 var buttonShow = function(){
-            
     for (var i = 0, len=localStorage.length; i < len; i++) {
     $('#editLink'+i).button();
     $('#deleteLink'+i).button();
@@ -442,7 +438,7 @@ var search = function() {
                     alert("No Results Found");
                 }
                 
-                    $('#searchResults').listview("refresh");
+                $('#searchResults').listview("refresh");
             };
 
 //Search Listeners
@@ -461,10 +457,8 @@ var search = function() {
 
 //Home Page Listener
 $('#home').on('pageinit', function(){
-    
-    $('#middleshelve').attr('checked', true);
-    $('#fifth').attr('checked', true);
-        
+                todaysDate();
+        	newsResults();
 });
 
 //Browse Page Listener
@@ -520,9 +514,11 @@ var clearStorage = function(){
 
 //Add page listener
 $('#add').on('pageinit', function(){
-                
+    
+        //$('#middleshelve').attr('checked', true);
+	//$('#fifth').attr('checked', true);  
         $('#quantity').slider("refresh");
-        $('#spiritname').val("Enter name of spirit");
+        //$('#spiritname').val("Enter name of spirit");
 
         
         $('#spiritname').on('click', function() {
@@ -549,13 +545,13 @@ $('#add').on('pageinit', function(){
                                 
             },
             submitHandler: function() {
-        var data = myForm.serializeArray();
+	    var data = myForm.serializeArray();
             storeData();
         }
     });
     
 
-                todaysDate();
+
                 
                 
                 $('#reset').on('click', function() {
@@ -580,7 +576,7 @@ $('#add').on('pageinit', function(){
 
 //News page listener
 $('#news').on('pageinit', function(){
-	newsResults();
+
         $('#newsList').listview('refresh');
 
 });

@@ -16,43 +16,39 @@
     
 <body>
     <!-- Begin Home Page -->
-    <div data-role="page" id="home">
-        <div data-role="header" data-theme="e" data-position="fixed">
-            <div class="ui-grid-a">
-                <div class="ui-block-a">
-                    <a href="#home"><img src="images/mini2.png" /></a>
-                </div>
-                <div class="ui-block-b">
-
-                </div>
+    <section data-role="page" id="home">
+        <header data-role="header" data-theme="e" data-position="fixed">
+            <div>
+                <a href="#" id="home">
+                    <img class="mini" src="images/mini2.png" />
+                </a>
             </div>
-    </div>
-        <div data-role="content" class="banner" class="navlist" >
-            <img src="images/splash.png" width="100%"/>               
+        </header>
+        <section data-role="content">
 
-        </div>
-        <div data-role="content" class="navlist">
-            <ul data-role="listview" data-theme="c">
+            <!-- <img class="banner" src="images/splash.png" /> -->
+
+            <ul data-role="listview" data-theme="a">
                 <li>
-                    <a href="#add">
+                    <a href="#add" data-transition="slide" >
                         <img src="images/alt icons/plus32.png" class="ui-li-icon" />
                         Add Spirit
                     </a>
                 </li>
                 <li>
-                    <a href="#news">
+                    <a href="#news" data-transition="slide" >
                     <img src="images/alt icons/rss32.png" class="ui-li-icon" />
                     News
                     </a>
                 </li>
                 <li>
-                    <a href="#browse">
+                    <a href="#browse" data-transition="slide" >
                     <img src="images/alt icons/note32.png" class="ui-li-icon" />
                     Browse Inventory
                     </a>
                 </li>
                 <li>
-                    <a href="#search">
+                    <a href="#search" data-transition="slide" >
                     <img src="images/alt icons/search32.png" class="ui-li-icon" />
                     Search
                     </a>
@@ -75,24 +71,31 @@
                     CSV
                     </a>
                 </li>
-            </ul>
-            <br />
-            <div id="spirits" data-role="content">
-                
-            </div>
-        </div>
-        <div data-role="footer" data-position="fixed">
-            <div data-role="navbar">
+            </ul>            
+        </section>
+        <footer data-position="fixed" data-role="footer">
+            <article data-role="navbar">
                 <ul>
-                    <li><a href="#home" data-role="button" data-icon="home" class="ui-btn-active">Home</a></li>
-                    <li><a href="#add" data-role="button" data-icon="plus" class="ui-body-e">Add</a></li>
-                    <li><a href="#news" data-role="button" data-icon="info" class="ui-body-e">News</a></li>
-                    <li><a href="#browse" data-role="button" data-icon="grid" class="ui-body-e">Browse</a></li>
-                    <li><a href="#search" data-role="button" data-icon="search" class="ui-body-e">Search</a></li>
+                    <li>
+                        <a href="#home" data-role="button" data-icon="home" data-transition="slide" class="ui-body-e">Home</a>
+                    </li>
+                    <li>
+                        <a href="#add" data-role="button" data-icon="plus" data-transition="slide" class="ui-body-e">Add</a>
+                    </li>
+                    <li>
+                        <a href="#news" data-role="button" data-icon="info" data-transition="slide" class="ui-body-e">News</a>
+                    </li>
+                    <li>
+                        <a href="#browse" data-role="button" data-icon="grid" data-transition="slide" class="ui-body-e">Browse</a>
+                    </li>
+                    <li>
+                        <a href="#search" data-role="button" data-icon="search" data-transition="slide" class="ui-body-e">Search</a>
+                    </li>
                 </ul>
-            </div>
-        </div>
-    </div>
+            </article>
+        </footer>
+    </section>
+    
     <!-- End Home Page -->
 
     
@@ -143,29 +146,21 @@
         <div data-role="content">
             <p class="title">Designed to keep an inventory of all your booze</p>
             <a href="../Bronze/index.html" rel="external" data-role="button" data-theme="e">Bronze App</a>
-            <a href="#home" data-role="button" data-theme="b">Back to Gold App</a>          
+            <a href="home" data-role="button" data-theme="b">Back to Gold App</a>          
         </div>
     </div>
     <!-- End About Page -->
 
     <!-- Begin Search Page -->
-    <div data-role="page" id="search" data-theme="a">
-        <div data-role="header" data-theme="e" data-position="fixed">
-            <div class="ui-grid-a">
-            <div class="ui-block-a">
-                <a href="#home"><img src="images/mini2.png" /></a>
+    <section data-role="page" id="search" data-theme="a">
+        <header data-role="header" data-theme="e" data-position="fixed">
+            <div>
+                <a href="#" id="home">
+                    <img class="mini" src="images/mini2.png" />
+                </a>
             </div>
-            <div class="ui-block-b">
-                <div data-role="controlgroup" data-type="horizontal" class="nav">
-                    <a href="#add" data-role="button" data-iconpos="notext" data-icon="plus" data-theme="a"></a>
-                    <a href="#news" data-role="button" data-iconpos="notext" data-icon="info" data-theme="a"></a>
-                    <a href="#browse" data-role="button" data-iconpos="notext" data-icon="grid" data-theme="a"></a>
-                    <a href="#search" data-role="button" data-iconpos="notext" data-icon="search" data-theme="a" class="ui-btn-active"></a>
-                </div>
-            </div>
-        </div>
-        </div>
-        <div data-role="content">
+        </header>
+        <section data-role="content">
             <label for="searchField">Enter a searh term:</label>
             <input type="search" id="searchField" data-theme="c" />
             <label for="category">Choose a category</label>
@@ -182,40 +177,41 @@
             <ul id="searchResults" data-role="listview" data-inset="true">
                     
             </ul>
-        </div>
-        
-        <div data-role="footer" data-position="fixed">
-            <div data-role="navbar">
+        </section>
+        <footer data-position="fixed" data-role="footer">        
+            <article data-role="navbar">
                 <ul>
-                    <li><a href="#home" data-role="button" data-icon="home" class="ui-body-e">Home</a></li>
-                    <li><a href="#add" data-role="button" data-icon="plus" class="ui-body-e">Add</a></li>
-                    <li><a href="#news" data-role="button" data-icon="info" class="ui-body-e">News</a></li>
-                    <li><a href="#browse" data-role="button" data-icon="grid" class="ui-body-e">Browse</a></li>
-                    <li><a href="#search" data-role="button" data-icon="search" class="ui-btn-active">Search</a></li>
+                    <li>
+                        <a href="#home" data-role="button" data-icon="home" data-transition="slide" class="ui-body-e">Home</a>
+                    </li>
+                    <li>
+                        <a href="#add" data-role="button" data-icon="plus" data-transition="slide" class="ui-body-e">Add</a>
+                    </li>
+                    <li>
+                        <a href="#news" data-role="button" data-icon="info" data-transition="slide" class="ui-body-e">News</a>
+                    </li>
+                    <li>
+                        <a href="#browse" data-role="button" data-icon="grid" data-transition="slide" class="ui-body-e">Browse</a>
+                    </li>
+                    <li>
+                        <a href="#search" data-role="button" data-icon="search" data-transition="slide" class="ui-btn-active">Search</a>
+                    </li>
                 </ul>
-            </div>
-        </div>
-    </div>
+            </article>
+        </footer>
+    </section>
     <!-- End Search Page -->  
     
     <!-- Begin Inventory Page -->
-    <div data-role="page" id="browse">
-        <div data-role="header" data-theme="e" data-position="fixed">
-            <div class="ui-grid-a">
-                <div class="ui-block-a">
-                    <a href="#home"><img src="images/mini2.png" /></a>
-                </div>
-                <div class="ui-block-b">
-                    <div data-role="controlgroup" data-type="horizontal" class="nav">
-                        <a href="#add" data-role="button" data-iconpos="notext" data-icon="plus" data-theme="a"></a>
-                        <a href="#news" data-role="button" data-iconpos="notext" data-icon="info" data-theme="a"></a>
-                        <a href="#browse" data-role="button" data-iconpos="notext" data-icon="grid" data-theme="a" class="ui-btn-active"></a>
-                        <a href="#search" data-role="button" data-iconpos="notext" data-icon="search" data-theme="a"></a>
-                    </div>
-                </div>
+    <section data-role="page" id="browse">
+        <header data-role="header" data-theme="e" data-position="fixed">
+            <div>
+                <a href="#" id="home">
+                    <img class="mini" src="images/mini2.png" />
+                </a>
             </div>
-        </div>
-        <div data-role="content">
+        </header>
+        <section data-role="content">
             <a href="#" data-role="button" data-theme="c" data-icon="minus" id="delete">Delete Inventory</a>
             <a href="#" id="jsonFill" data-role="button" data-theme="e" data-icon="plus" style="display:none">Fill Iventory with JSON Data</a>
             <br />
@@ -223,39 +219,41 @@
                     
                 </ul>
             <br />
-        </div>
-        <div data-role="footer" data-position="fixed">
-            <div data-role="navbar">
+        </section>
+        <footer data-position="fixed" data-role="footer">
+            <article data-role="navbar">
                 <ul>
-                    <li><a href="#home" data-role="button" data-icon="home" class="ui-body-e">Home</a></li>
-                    <li><a href="#add" data-role="button" data-icon="plus" class="ui-body-e">Add</a></li>
-                    <li><a href="#news" data-role="button" data-icon="info" class="ui-body-e">News</a></li>
-                    <li><a href="#browse" data-role="button" data-icon="grid" class="ui-btn-active">Browse</a></li>
-                    <li><a href="#search" data-role="button" data-icon="search" class="ui-body-e">Search</a></li>
+                    <li>
+                        <a href="#home" data-role="button" data-icon="home" data-transition="slide" class="ui-body-e">Home</a>
+                    </li>
+                    <li>
+                        <a href="#add" data-role="button" data-icon="plus" data-transition="slide" class="ui-body-e">Add</a>
+                    </li>
+                    <li>
+                        <a href="#news" data-role="button" data-icon="info" data-transition="slide" class="ui-body-e">News</a>
+                    </li>
+                    <li>
+                        <a href="#browse" data-role="button" data-icon="grid" data-transition="slide" class="ui-btn-active">Browse</a>
+                    </li>
+                    <li>
+                        <a href="#search" data-role="button" data-icon="search" data-transition="slide" class="ui-body-e">Search</a>
+                    </li>
                 </ul>
-            </div>
-        </div>
-    </div>
+            </article>
+        </footer>
+    </section>
     <!-- End Inventory Page -->
     
     <!-- Begin News Page -->
-    <div data-role="page" id="news" data-theme="a">
-        <div data-role="header" data-theme="e" data-position="fixed">
-            <div class="ui-grid-a">
-                <div class="ui-block-a">
-                    <a href="#home"><img src="images/mini2.png" /></a>
-                </div>
-                <div class="ui-block-b">
-                    <div data-role="controlgroup" data-type="horizontal" class="nav">
-                        <a href="#add" data-role="button" data-iconpos="notext" data-icon="plus" data-theme="a"></a>
-                        <a href="#news" data-role="button" data-iconpos="notext" data-icon="info" data-theme="a" class="ui-btn-active"></a>
-                        <a href="#browse" data-role="button" data-iconpos="notext" data-icon="grid" data-theme="a"></a>
-                        <a href="#search" data-role="button" data-iconpos="notext" data-icon="search" data-theme="a"></a>
-                    </div>
-                </div>
+    <section data-role="page" id="news" data-theme="a">
+        <header data-role="header" data-theme="e" data-position="fixed">
+            <div>
+                <a href="#" id="home">
+                    <img class="mini" src="images/mini2.png" />
+                </a>
             </div>
-        </div>
-        <div data-role="content">
+        </header>
+        <section data-role="content">
             <div id="newsStream">
                 <div data-role="collapsible" data-theme="c">
                     <h3>Top Stored Families</h3>
@@ -264,42 +262,44 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </section >
         
-        <div data-role="footer" data-position="fixed">
-            <div data-role="navbar">
+        <footer data-position="fixed" data-role="footer">
+            <article data-role="navbar">
                 <ul>
-                    <li><a href="#home" data-role="button" data-icon="home" class="ui-body-e">Home</a></li>
-                    <li><a href="#add" data-role="button" data-icon="plus" class="ui-body-e">Add</a></li>
-                    <li><a href="#news" data-role="button" data-icon="info" class="ui-btn-active">News</a></li>
-                    <li><a href="#browse" data-role="button" data-icon="grid" class="ui-body-e">Browse</a></li>
-                    <li><a href="#search" data-role="button" data-icon="search" class="ui-body-e">Search</a></li>
+                    <li>
+                        <a href="#home" data-role="button" data-icon="home" data-transition="slide" class="ui-body-e">Home</a>
+                    </li>
+                    <li>
+                        <a href="#add" data-role="button" data-icon="plus" data-transition="slide" class="ui-body-e">Add</a>
+                    </li>
+                    <li>
+                        <a href="#news" data-role="button" data-icon="info" data-transition="slide" class="ui-btn-active">News</a>
+                    </li>
+                    <li>
+                        <a href="#browse" data-role="button" data-icon="grid" data-transition="slide" class="ui-body-e">Browse</a>
+                    </li>
+                    <li>
+                        <a href="#search" data-role="button" data-icon="search" data-transition="slide" class="ui-body-e">Search</a>
+                    </li>
                 </ul>
-            </div>
-        </div>
-    </div>
+            </article>
+        </footer>
+    </section>
     <!-- End News Page -->
 
 <!-- Begin Add Spirit Form Page -->
-    <div data-role="page" id="add" data-theme="a">
+    <section data-role="page" id="add" data-theme="a">
         
-        <div data-role="header" data-theme="e" data-position="fixed">
-            <div class="ui-grid-a">
-                <div class="ui-block-a">
-                    <a href="#home"><img src="images/mini2.png" /></a>
-                </div>
-                <div class="ui-block-b">
-                    <div data-role="controlgroup" data-type="horizontal" class="nav">
-                        <a href="#add" data-role="button" data-iconpos="notext" data-icon="plus" data-theme="a" class="ui-btn-active"></a>
-                        <a href="#news" data-role="button" data-iconpos="notext" data-icon="info" data-theme="a"></a>
-                        <a href="#browse" data-role="button" data-iconpos="notext" data-icon="grid" data-theme="a"></a>
-                        <a href="#search" data-role="button" data-iconpos="notext" data-icon="search" data-theme="a"></a>
-                    </div>
-                </div>
+        <header data-role="header" data-theme="e" data-position="fixed">
+            <div>
+                <a href="#" id="home">
+                    <img class="mini" src="images/mini2.png" />
+                </a>
             </div>
-        </div>
+        </header>
         
-        <div data-role="content">
+        <section data-role="content">
             <form action="" method="post" id="addspiritform">
             
                 <div data-role="fieldcontain">
@@ -385,20 +385,30 @@
                 <a href="#errors" id="errorlink" data-rel="dialog" data-transition="pop" >See Errors</a>
             </form>
             
-        </div>
+        </section>
         
-        <div data-role="footer" data-position="fixed">
-            <div data-role="navbar">
+        <footer data-position="fixed" data-role="footer">
+            <article data-role="navbar">
                 <ul>
-                    <li><a href="#home" data-role="button" data-icon="home" class="ui-body-e">Home</a></li>
-                    <li><a href="#add" data-role="button" data-icon="plus" class="ui-btn-active">Add</a></li>
-                    <li><a href="#news" data-role="button" data-icon="info" class="ui-body-e">News</a></li>
-                    <li><a href="#browse" data-role="button" data-icon="grid" class="ui-body-e">Browse</a></li>
-                    <li><a href="#search" data-role="button" data-icon="search" class="ui-body-e">Search</a></li>
+                    <li>
+                        <a href="#home" data-role="button" data-icon="home" data-transition="slide" class="ui-body-e">Home</a>
+                    </li>
+                    <li>
+                        <a href="#add" data-role="button" data-icon="plus" data-transition="slide" class="ui-btn-active">Add</a>
+                    </li>
+                    <li>
+                        <a href="#news" data-role="button" data-icon="info" data-transition="slide" class="ui-body-e">News</a>
+                    </li>
+                    <li>
+                        <a href="#browse" data-role="button" data-icon="grid" data-transition="slide" class="ui-body-e">Browse</a>
+                    </li>
+                    <li>
+                        <a href="#search" data-role="button" data-icon="search" data-transition="slide" class="ui-body-e">Search</a>
+                    </li>
                 </ul>
-            </div>
-        </div>
-    </div>
+            </article>
+        </footer>
+    </section>
     <!-- End Add Spirit Form Page -->
     
     <!-- Begin Errors Page -->
