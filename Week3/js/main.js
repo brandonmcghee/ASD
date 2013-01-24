@@ -108,7 +108,7 @@ function getImage(catName, makeSubList) {
     var imageLi = $('<p>');
     makeSubList.append(imageLi);
     var newImg = $('<img />');
-    var setSrc = newImg.attr("src", "images/" + catName + ".png");
+    var setSrc = newImg.attr("src", catName + ".png");
     imageLi.append(newImg);
 };
                 
@@ -307,26 +307,23 @@ $('#xml').on('click', function(){
 //JSON Code for Ajax
 $('#jsonLink').on('click', function(){
     $.ajax({
-    url: 'ajax/list.json',
-    type: 'GET',
+    url: '_view/spirits',
     dataType: 'json',
-    success: function(result){
-        for(var i = 0, j = result.spirits.length; i < j; i++) {
-        var data = result.spirits[i];
-        $(''+
-          '<ul>' +
-          '<li><h3>' + data.spiritName + '</h3></li>' +
-          '<li><b>Quantity: </b>' + data.quantity + '</li>' +
-          '<li><b>Bottle Size: </b>' + data.bottleMIL + '</li>' +
-          '<li><b>Shelve: </b>' + data.shelve + '</li>' +
-          '<li><b>Family: </b>' + data.family + '</li>' +
-          '<li><b>Date of Purchase: </b>' + data.date + '</li>' +
-          '<li>---------------------------------</li>' +
-          '</ul>'
-          
-          ).appendTo("#jsonList");
+    success: function(data){
+        $.each(data.rows, function(index, spirit) {
+        	var name = spirit.value.spiritName;
+        	var family = spirit.value.family;
+        	var quantity = spirit.value.quantity;
+        	
+        	$('#jsonList').append(
+        		$('<li>').append(
+        			$('<a>').attr("href", "#")
+        				.text(name)
+        			)
+        		);
+        	});
+        	$('#jsonList').listview('refresh');
         }
-    }
     });
 });
 
@@ -576,7 +573,6 @@ $('#add').on('pageinit', function(){
 
 //News page listener
 $('#news').on('pageinit', function(){
-
         $('#newsList').listview('refresh');
 
 });
