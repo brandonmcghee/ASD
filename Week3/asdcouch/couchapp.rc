@@ -1,0 +1,10 @@
+{
+  "env": {
+    "local": {
+      "db": "http://127.0.0.1:5984/spirittracker"
+    },
+    "cloudant": {
+      "db": "https://brandonmcghee:couch@brandonmcghee.cloudant.com/spirittracker"
+    }
+  }
+}
